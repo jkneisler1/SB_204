@@ -18,7 +18,7 @@
         Type :<input type="text" th:field="*{type}" />
         <span th:if="${#fields.hasErrors('type')}" th:errors="*{type}"></span><br />
 
-        Description :<textarea rows="3" th:field=*{description}" />
+        Description :<textarea rows="3" th:field="*{description}"></textarea>
         <span th:if="${#fields.hasErrors('description')}" th:errors="*{description}"></span><br />
 
         <input type="submit" value="Submit" />
